@@ -18,7 +18,7 @@ public class FlightController {
     public String viewflight(@RequestBody FlightModel flight){
         System.out.println(flight.toString());
         dao.save((flight));
-        return  "{status:'success'}";
+        return  "{status:'successs'}";
     }
     @CrossOrigin(origins = "*")
     @GetMapping("/viewflight")
